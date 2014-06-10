@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Scrubber</title>
+
+
+  <link rel="stylesheet" href="scrubber.css">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+  <div id="video-container">
+    <!-- Video -->
+    <video id="video" src="assets/thisistheend.mp4" poster="assets/poster1.png" preload="auto" controls>
+    </video>
+    <div id="title">
+      <h2>Now Showing</h2>
+      <h1>This is the End</h1>
+      <h2>LaughTrack clips video highlights by listening to the audience.</h2>
+      <!-- <h2>LaughTrack stitches video highlights by listening to the audience.</h2> -->
+      <div class="hr"></div>
+      <h2><i class="fa fa-microphone fa-lg"></i></h2>
+    </div>
+  </div>
+  <svg id="chart"></svg>
+
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="scrubber.js"></script>
+
+</body>
+</html> 

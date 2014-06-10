@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+#chart rect {
+  fill: steelblue;
+}
+
+#chart text {
+  fill: black;
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+#chart {
+  width: 960px;
+  height: 200px;
+}
+
+</style>
+<body>
+    <div id="video-container">
+    <div id="title">
+      <h2>Now Showing</h2>
+      <h1>This is the End</h1>
+    </div>
+  </div>
+  <svg id="chart"></svg>
+      <!-- Video -->
+    <video id="video" src="assets/thisistheend.mp4" poster="assets/poster1.png" preload="auto" controls>
+    </video>
+</body>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="scrubber.js"></script>
+ <script>
+
+// var chartContainer = document.getElementById("chart");
+
+// var width = chartContainer.clientWidth,
+//     height = chartContainer.clientHeight;
+
+// var y = d3.scale.linear()
+//     .range([height, 0]);
+
+// var chart = d3.select("#chart")
+//     .attr("width", width)
+//     .attr("height", height);
+
+// d3.csv("GameOfThrones.csv", type, function(error, data) {
+//   y.domain([0, d3.max(data, function(d) { return d.value; })]);
+
+//   var barWidth = width / data.length;
+
+//   var bar = chart.selectAll("g")
+//       .data(data)
+//     .enter().append("g")
+//       .attr("transform", function(d, i) { return "translate(" + i * barWidth + ",0)"; });
+
+//   bar.append("rect")
+//       .attr("y", function(d) { return y(d.value); })
+//       .attr("height", function(d) { return height - y(d.value); })
+//       .attr("width", barWidth - 1);
+
+//   // bar.append("text")
+//   //     .attr("x", barWidth / 2)
+//   //     .attr("y", function(d) { return y(d.value) -10; })
+//   //     .attr("dy", ".75em")
+//   //     .text(function(d) { return d.value; });
+// });
+
+// function type(d) {
+//   d.value = +d.value; // coerce to number
+//   return d;
+// }
+
+ </script> 
